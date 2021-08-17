@@ -16,7 +16,7 @@ export default function MemoList()  {
 
     <View style={styles.memoListItem}>
       <View>
-        <Text style={styles.memoListItemTitle}>買い物リスト</Text>
+        <Text style={styles.memoListItemTitle}>アイデアノート</Text>
         <Text style={styles.memoListItemDate}>2021/08/10 4:00</Text>
       </View>
       <View>
@@ -26,7 +26,7 @@ export default function MemoList()  {
 
     <View style={styles.memoListItem}>
       <View>
-        <Text style={styles.memoListItemTitle}>買い物リスト</Text>
+        <Text style={styles.memoListItemTitle}>今月の目標</Text>
         <Text style={styles.memoListItemDate}>2021/08/10 4:00</Text>
       </View>
       <View>
