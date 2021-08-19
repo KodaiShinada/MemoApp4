@@ -11,7 +11,7 @@ export default function MemoList()  {
         <Text style={styles.memoListItemDate}>2021/08/10 4:00</Text>
       </View>
       <View>
-        <Feather name="x" size={16} color="#B0B0B0" />
+        <Feather name="x" size={24} color="#B0B0B0" />
       </View>
     </View>
 
@@ -21,7 +21,7 @@ export default function MemoList()  {
         <Text style={styles.memoListItemDate}>2021/08/10 4:00</Text>
       </View>
       <View>
-        <Feather name="x" size={16} color="#B0B0B0" />
+        <Feather name="x" size={24} color="#B0B0B0" />
       </View>
     </View>
 
@@ -31,7 +31,7 @@ export default function MemoList()  {
         <Text style={styles.memoListItemDate}>2021/08/10 4:00</Text>
       </View>
       <View>
-        <Feather name="x" size={16} color="#B0B0B0" />
+        <Feather name="x" size={24} color="#B0B0B0" />
       </View>
     </View>
   </View>
