@@ -2,14 +2,14 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 export default function AppBar() {
-    return (
-        <View style={styles.appbar}>
-        <View style={styles.appbarInner}>
-          <Text style={styles.appbarTitle}>Memo App</Text>
-          <Text style={styles.appbarRight}>Log out</Text>
-        </View>
+  return (
+    <View style={styles.appbar}>
+      <View style={styles.appbarInner}>
+        <Text style={styles.appbarTitle}>Memo App</Text>
+        <Text style={styles.appbarRight}>Log out</Text>
       </View>
-    );
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({

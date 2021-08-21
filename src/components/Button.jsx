@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet} from 'react-native';
+import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { string, func } from 'prop-types';
 
 export default function Button(props) {
@@ -17,6 +17,7 @@ Button.propTypes = {
 };
 
 Button.propTypes = {
+  // eslint-disable-next-line react/require-default-props
   onPress: null,
 };
 

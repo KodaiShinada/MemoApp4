@@ -1,22 +1,38 @@
 import React from 'react';
-import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-native';
+import {
+  StyleSheet, Text, TextInput, View, TouchableOpacity,
+} from 'react-native';
 
-import AppBar from '../components/AppBar';
 import Button from '../components/Button';
 
-export default function LogInScreen() {
+export default function LogInScreen(props) {
+  const { navigation } = props;
   return (
     <View style={styles.container}>
-      <AppBar />
       <View style={styles.inner}>
         <Text style={styles.title}>Log In</Text>
         <TextInput style={styles.input} value="Email Address" />
         <TextInput style={styles.input} value="Password" />
-        <Button label="Submit" />
+        <Button
+          label="Submit"
+          onPress={() => {
+            navigation.reset({
+              index: 0,
+              routes: [{ name: 'MemoList' }],
+            });
+          }}
+        />
         <View style={styles.footer}>
           <Text style={styles.footerText}>Not registered?</Text>
-          <TouchableOpacity>
-          <Text style={styles.footerLink}>Sign up here!</Text>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.reset({
+                index: 0,
+                routes: [{ name: 'SignUp' }],
+              });
+            }}
+          >
+            <Text style={styles.footerLink}>Sign up here!</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -27,7 +43,7 @@ export default function LogInScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F0F4F8'
+    backgroundColor: '#F0F4F8',
   },
   inner: {
     paddingHorizontal: 27,
@@ -36,7 +52,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     lineHeight: 32,
-    fontWeight: 'bold' ,
+    fontWeight: 'bold',
     marginBottom: 24,
   },
   input: {
@@ -56,7 +72,7 @@ const styles = StyleSheet.create({
   footerLink: {
     fontSize: 14,
     lineHeight: 24,
-    color: '#467fd3'
+    color: '#467fd3',
   },
   footer: {
     flexDirection: 'row',
