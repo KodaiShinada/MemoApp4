@@ -16,8 +16,7 @@ Button.propTypes = {
   onPress: func,
 };
 
-Button.propTypes = {
-  // eslint-disable-next-line react/require-default-props
+Button.defaultProps = {
   onPress: null,
 };
 
